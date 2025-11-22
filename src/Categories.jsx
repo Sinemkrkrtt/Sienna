@@ -68,7 +68,7 @@ function Categories() {
                         gridColumn: "3",
                         gridRow: "1 / span 2", // sağdaki uzun kutu iki sırayı kaplasın
                     }}
-                    onClick={() => navigate('/newCollections')}
+                    onClick={() => navigate('/NewCollections')}
                 ></Box>
 
                 {/* Alt sıra */}

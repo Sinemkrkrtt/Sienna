@@ -1,54 +1,58 @@
-
 import { Box, Typography, Grid, Card, CardMedia, CardContent, IconButton, Button } from "@mui/material";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import React, { useState } from 'react';
-import outfit1 from "./assets/newProducts1.jpeg";
-import outfit2 from "./assets/newProducts2.jpeg";
-import outfit3 from "./assets/newProducts3.jpeg";
-import outfit5 from "./assets/newProducts5.png";
-import outfit6 from "./assets/newProducts6.png";
-import outfit7 from "./assets/newProducts7.jpeg";
-import outfit8 from "./assets/newProducts8.jpeg";
-import outfit9 from "./assets/newProducts9.jpeg";
-import outfit10 from "./assets/newProducts10.jpeg";
-import outfit11 from "./assets/newProducts11.jpeg";
-import outfit12 from "./assets/newProducts12.jpeg";
-import outfit13 from "./assets/newProducts13.jpeg";
-import outfit14 from "./assets/newProducts14.jpeg";
-import outfit15 from "./assets/newProducts15.jpeg";
-import outfit16 from "./assets/newProducts16.jpeg";
-import outfit17 from "./assets/newProducts17.jpeg";
-import outfit18 from "./assets/newProducts18.jpeg";
-import outfit19 from "./assets/newProducts19.jpeg";
-import outfit20 from "./assets/newProducts20.jpeg";
-import outfit21 from "./assets/newProducts21.jpeg";
+import outfit1 from "./assets/newProducts15.jpeg";
+import outfit2 from "./assets/Sales4.jpeg";
+import outfit3 from "./assets/Sales18.jpeg";
+import outfit4 from "./assets/Shoe4.jpeg";
+import outfit5 from "./assets/Shoe5.jpeg";
+import outfit6 from "./assets/Shoe6.jpeg";
+import outfit7 from "./assets/Shoe7.jpeg";
+import outfit8 from "./assets/Shoe8.jpeg";
+import outfit9 from "./assets/Shoe9.jpeg";
+import outfit10 from "./assets/Shoe10.jpeg";
+import outfit11 from "./assets/Shoe11.jpeg";
+import outfit12 from "./assets/Shoe12.jpeg";
+import outfit13 from "./assets/Shoe13.jpeg";
+import outfit14 from "./assets/Shoe14.jpeg";
+import outfit15 from "./assets/Shoe15.jpeg";
+import outfit16 from "./assets/Shoe16.jpeg";
+import outfit17 from "./assets/Shoe17.jpeg";
+import outfit18 from "./assets/Shoe18.jpeg";
+import outfit19 from "./assets/Shoe19.jpeg";
+import outfit20 from "./assets/Shoe20.jpeg";
 
-function NewCollections() {
+
+
+
+function WomanShoes() {
     const [favorites, setFavorites] = useState([]); // favoriler listesi
     const products = [
-        { id: 1, img: outfit1, name: "Cropped Brown Jacket", price: "$99.99" },
-        { id: 2, img: outfit2, name: "Beige Poncho Jacket", price: "$89.99" },
-        { id: 3, img: outfit3, name: "Beige Velvet Coat", price: "$109.99" },
-        { id: 4, img: outfit5, name: "Brown Leather Boots", price: "$139.99" },
-        { id: 5, img: outfit6, name: "Luxury Brown Bag", price: "$69.99" },
-        { id: 6, img: outfit7, name: "White Puffer Jacket", price: "$129.99" },
-        { id: 7, img: outfit8, name: "Brown Tracksuit", price: "$79.99" },
-        { id: 8, img: outfit9, name: "Burgundy Leather Gloves", price: "$69.99" },
-        { id: 9, img: outfit10, name: "Off-Shoulder Grey Knit Dress", price: "$89.99" },
-        { id: 10, img: outfit11, name: "Navy Blue Shirt", price: "$49.99" },
-        { id: 11, img: outfit12, name: "Brown Slim Glasses", price: "$69.99" },
-        { id: 12, img: outfit13, name: "Burgundy Faux Fur Coat", price: "$109.99" },
-        { id: 13, img: outfit14, name: "Black Long Coat", price: "$129.99" },
-        { id: 14, img: outfit15, name: "Black Convertible Boots", price: "$89.99" },
-        { id: 15, img: outfit16, name: "Extra Loose Brown Pants", price: "$59.99" },
-        { id: 16, img: outfit17, name: "Beige Artist Hat", price: "$29.99" },
-        { id: 17, img: outfit18, name: "Black Lace-Up Boots", price: "$79.99" },
-        { id: 18, img: outfit19, name: "Green Sweater", price: "$49.99" },
-        { id: 19, img: outfit20, name: "Leather Brown Belt", price: "$89.99" },
-        { id: 20, img: outfit21, name: "Emerald Velvet Maxi Skirt", price: "$69.99" },
+        { id: 14, img: outfit1, name: "Black Convertible Boots", price: "$89.99" },
+        { id: 24, img: outfit2, name: "Green Sandals", oldprice: "89.99", price: "$64.99" },
+        { id: 38, img: outfit3, name: "Black Ballet Flats", price: "$49.99" },
+        { id: 57, img: outfit4, name: "Burgundy Platform Mary Jane", price: "$89.99" },
+        { id: 58, img: outfit5, name: "Black Pointy Sock Boot", price: "$109.99" },
+        { id: 59, img: outfit6, name: "Brown Suede Lace-Up Shoes", price: "$84.99" },
+        { id: 60, img: outfit7, name: "Black Pointed Toe Heels", price: "$84.99" },
+        { id: 61, img: outfit8, name: "Burgundy Square Toe Sandals", price: "$69.99" },
+        { id: 62, img: outfit9, name: "Leopard Stiletto Pump", price: "$89.99" },
+        { id: 63, img: outfit10, name: "Retro High-Top Sneaker", price: "$129.99" },
+        { id: 64, img: outfit11, name: "Black Ankle Strap Sandal", price: "$109.99" },
+        { id: 65, img: outfit12, name: "Floral Print Flats", price: "$99.99" },
+        { id: 66, img: outfit13, name: "Rose Lace-Up Heels", price: "$79.99" },
+
+        { id: 67, img: outfit14, name: "White Sneaker", price: "$104.99" },
+        { id: 68, img: outfit15, name: "Black Single Strap Stiletto", price: "$114.99" },
+        { id: 69, img: outfit16, name: "Pink Pastel Heart Sneaker", price: "$69.99" },
+        { id: 70, img: outfit17, name: "Brown Square Toe Block Heel", price: "$129.99" },
+        { id: 71, img: outfit18, name: "Wine Tall Boot", price: "$149.99" },
+        { id: 72, img: outfit19, name: "Metallic Stiletto", price: "$124.99" },
+        { id: 73, img: outfit20, name: "White Glitter Sneaker", price: "$109.99" },
     ];
+
     const toggleFavorite = (product) => {
         if (favorites.find(fav => fav.id === product.id)) {
             // zaten favorideyse çıkar
@@ -142,4 +146,4 @@ function NewCollections() {
     );
 }
 
-export default NewCollections;
+export default WomanShoes;

@@ -4,50 +4,54 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import React, { useState } from 'react';
-import outfit1 from "./assets/newProducts1.jpeg";
-import outfit2 from "./assets/newProducts2.jpeg";
-import outfit3 from "./assets/newProducts3.jpeg";
-import outfit5 from "./assets/newProducts5.png";
-import outfit6 from "./assets/newProducts6.png";
-import outfit7 from "./assets/newProducts7.jpeg";
-import outfit8 from "./assets/newProducts8.jpeg";
-import outfit9 from "./assets/newProducts9.jpeg";
-import outfit10 from "./assets/newProducts10.jpeg";
-import outfit11 from "./assets/newProducts11.jpeg";
-import outfit12 from "./assets/newProducts12.jpeg";
-import outfit13 from "./assets/newProducts13.jpeg";
-import outfit14 from "./assets/newProducts14.jpeg";
-import outfit15 from "./assets/newProducts15.jpeg";
-import outfit16 from "./assets/newProducts16.jpeg";
-import outfit17 from "./assets/newProducts17.jpeg";
-import outfit18 from "./assets/newProducts18.jpeg";
-import outfit19 from "./assets/newProducts19.jpeg";
-import outfit20 from "./assets/newProducts20.jpeg";
-import outfit21 from "./assets/newProducts21.jpeg";
+import outfit1 from "./assets/newProducts10.jpeg";
+import outfit2 from "./assets/Sales1.jpeg";
+import outfit3 from "./assets/Sales9.jpeg";
+import outfit4 from "./assets/dress4.jpeg";
+import outfit5 from "./assets/dress5.jpeg";
+import outfit6 from "./assets/dress6.jpeg";
+import outfit7 from "./assets/dress7.jpeg";
+import outfit8 from "./assets/dress8.jpeg";
+import outfit9 from "./assets/dress9.jpeg";
+import outfit10 from "./assets/dress10.jpeg";
+import outfit11 from "./assets/dress11.jpeg";
+import outfit12 from "./assets/dress12.jpeg";
+import outfit13 from "./assets/dress13.jpeg";
+import outfit14 from "./assets/dress14.jpeg";
+import outfit15 from "./assets/dress15.jpeg";
+import outfit16 from "./assets/dress16.jpeg";
+import outfit17 from "./assets/dress17.jpeg";
+import outfit18 from "./assets/dress18.jpeg";
+import outfit19 from "./assets/dress19.jpeg";
+import outfit20 from "./assets/dress20.jpeg";
 
-function NewCollections() {
+
+
+
+function Dress() {
     const [favorites, setFavorites] = useState([]); // favoriler listesi
     const products = [
-        { id: 1, img: outfit1, name: "Cropped Brown Jacket", price: "$99.99" },
-        { id: 2, img: outfit2, name: "Beige Poncho Jacket", price: "$89.99" },
-        { id: 3, img: outfit3, name: "Beige Velvet Coat", price: "$109.99" },
-        { id: 4, img: outfit5, name: "Brown Leather Boots", price: "$139.99" },
-        { id: 5, img: outfit6, name: "Luxury Brown Bag", price: "$69.99" },
-        { id: 6, img: outfit7, name: "White Puffer Jacket", price: "$129.99" },
-        { id: 7, img: outfit8, name: "Brown Tracksuit", price: "$79.99" },
-        { id: 8, img: outfit9, name: "Burgundy Leather Gloves", price: "$69.99" },
-        { id: 9, img: outfit10, name: "Off-Shoulder Grey Knit Dress", price: "$89.99" },
-        { id: 10, img: outfit11, name: "Navy Blue Shirt", price: "$49.99" },
-        { id: 11, img: outfit12, name: "Brown Slim Glasses", price: "$69.99" },
-        { id: 12, img: outfit13, name: "Burgundy Faux Fur Coat", price: "$109.99" },
-        { id: 13, img: outfit14, name: "Black Long Coat", price: "$129.99" },
-        { id: 14, img: outfit15, name: "Black Convertible Boots", price: "$89.99" },
-        { id: 15, img: outfit16, name: "Extra Loose Brown Pants", price: "$59.99" },
-        { id: 16, img: outfit17, name: "Beige Artist Hat", price: "$29.99" },
-        { id: 17, img: outfit18, name: "Black Lace-Up Boots", price: "$79.99" },
-        { id: 18, img: outfit19, name: "Green Sweater", price: "$49.99" },
-        { id: 19, img: outfit20, name: "Leather Brown Belt", price: "$89.99" },
-        { id: 20, img: outfit21, name: "Emerald Velvet Maxi Skirt", price: "$69.99" },
+        { id: 9, img: outfit1, name: "Off-Shoulder Grey Knit Dress", price: "$69.99" },
+        { id: 21, img: outfit2, name: "White Floral Mini Dress", price: "$79.99" },
+        { id: 29, img: outfit3, name: "Butter Yellow Strappy Dress", price: "$94.99" },
+        { id: 40, img: outfit4, name: "Cream Half-Sleeve Dresses", price: "$89.99" },
+        { id: 41, img: outfit5, name: "Slit-Front Cobalt Satin Dress", price: "$109.99" },
+        { id: 42, img: outfit6, name: "Thick-Strap Brown Maxi Dress", price: "$84.99" },
+        { id: 43, img: outfit7, name: "Pink Floral Ruffled Dress", price: "$84.99" },
+        { id: 44, img: outfit8, name: "White Cherry Patterned Dress", price: "$69.99" },
+        { id: 45, img: outfit9, name: "Light Pink Tulle Mini Dress", price: "$89.99" },
+        { id: 46, img: outfit10, name: "Cream Satin Dress ", price: "$129.99" },
+        { id: 47, img: outfit11, name: "Green Dress with Gathered", price: "$109.99" },
+        { id: 48, img: outfit12, name: "White Dress with Gold Buttons", price: "$99.99" },
+        { id: 49, img: outfit13, name: "Baby Blue Off-Shoulder Dress", price: "$79.99" },
+        { id: 50, img: outfit14, name: "Brown Shoulder Detailed Dress", price: "$104.99" },
+        { id: 51, img: outfit15, name: "White V-Neck Knit Dress", price: "$114.99" },
+        { id: 52, img: outfit16, name: "Red White Gingham Button Dress", price: "$69.99" },
+        { id: 53, img: outfit17, name: "Sleeveless Green Dress", price: "$129.99" },
+        { id: 54, img: outfit18, name: "Baby Blue Tulle Dress", price: "$149.99" },
+        { id: 55, img: outfit19, name: "White Mini Dress ", price: "$124.99" },
+        { id: 56, img: outfit20, name: "Brown Suede Long Dress ", price: "$109.99" },
+
     ];
     const toggleFavorite = (product) => {
         if (favorites.find(fav => fav.id === product.id)) {
@@ -142,4 +146,4 @@ function NewCollections() {
     );
 }
 
-export default NewCollections;
+export default Dress;

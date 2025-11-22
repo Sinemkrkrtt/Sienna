@@ -1,54 +1,55 @@
-
 import { Box, Typography, Grid, Card, CardMedia, CardContent, IconButton, Button } from "@mui/material";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import React, { useState } from 'react';
-import outfit1 from "./assets/newProducts1.jpeg";
-import outfit2 from "./assets/newProducts2.jpeg";
-import outfit3 from "./assets/newProducts3.jpeg";
-import outfit5 from "./assets/newProducts5.png";
-import outfit6 from "./assets/newProducts6.png";
-import outfit7 from "./assets/newProducts7.jpeg";
-import outfit8 from "./assets/newProducts8.jpeg";
-import outfit9 from "./assets/newProducts9.jpeg";
-import outfit10 from "./assets/newProducts10.jpeg";
-import outfit11 from "./assets/newProducts11.jpeg";
-import outfit12 from "./assets/newProducts12.jpeg";
-import outfit13 from "./assets/newProducts13.jpeg";
-import outfit14 from "./assets/newProducts14.jpeg";
-import outfit15 from "./assets/newProducts15.jpeg";
-import outfit16 from "./assets/newProducts16.jpeg";
-import outfit17 from "./assets/newProducts17.jpeg";
-import outfit18 from "./assets/newProducts18.jpeg";
-import outfit19 from "./assets/newProducts19.jpeg";
-import outfit20 from "./assets/newProducts20.jpeg";
-import outfit21 from "./assets/newProducts21.jpeg";
+import outfit1 from "./assets/newProducts21.jpeg";
+import outfit2 from "./assets/Sales6.jpeg";
+import outfit3 from "./assets/Sales12.jpeg";
+import outfit4 from "./assets/skirt4.jpeg";
+import outfit5 from "./assets/skirt5.jpeg";
+import outfit6 from "./assets/skirt6.jpeg";
+import outfit7 from "./assets/skirt7.jpeg";
+import outfit8 from "./assets/skirt8.jpeg";
+import outfit9 from "./assets/skirt9.jpeg";
+import outfit10 from "./assets/skirt10.jpeg";
+import outfit11 from "./assets/skirt11.jpeg";
+import outfit12 from "./assets/skirt12.jpeg";
+import outfit13 from "./assets/skirt13.jpeg";
+import outfit14 from "./assets/skirt14.jpeg";
+import outfit15 from "./assets/skirt15.jpeg";
+import outfit16 from "./assets/skirt16.jpeg";
+import outfit17 from "./assets/skirt17.jpeg";
+import outfit18 from "./assets/skirt18.jpeg";
+import outfit19 from "./assets/skirt19.jpeg";
+import outfit20 from "./assets/skirt20.jpeg";
 
-function NewCollections() {
+
+function Skirt() {
     const [favorites, setFavorites] = useState([]); // favoriler listesi
     const products = [
-        { id: 1, img: outfit1, name: "Cropped Brown Jacket", price: "$99.99" },
-        { id: 2, img: outfit2, name: "Beige Poncho Jacket", price: "$89.99" },
-        { id: 3, img: outfit3, name: "Beige Velvet Coat", price: "$109.99" },
-        { id: 4, img: outfit5, name: "Brown Leather Boots", price: "$139.99" },
-        { id: 5, img: outfit6, name: "Luxury Brown Bag", price: "$69.99" },
-        { id: 6, img: outfit7, name: "White Puffer Jacket", price: "$129.99" },
-        { id: 7, img: outfit8, name: "Brown Tracksuit", price: "$79.99" },
-        { id: 8, img: outfit9, name: "Burgundy Leather Gloves", price: "$69.99" },
-        { id: 9, img: outfit10, name: "Off-Shoulder Grey Knit Dress", price: "$89.99" },
-        { id: 10, img: outfit11, name: "Navy Blue Shirt", price: "$49.99" },
-        { id: 11, img: outfit12, name: "Brown Slim Glasses", price: "$69.99" },
-        { id: 12, img: outfit13, name: "Burgundy Faux Fur Coat", price: "$109.99" },
-        { id: 13, img: outfit14, name: "Black Long Coat", price: "$129.99" },
-        { id: 14, img: outfit15, name: "Black Convertible Boots", price: "$89.99" },
-        { id: 15, img: outfit16, name: "Extra Loose Brown Pants", price: "$59.99" },
-        { id: 16, img: outfit17, name: "Beige Artist Hat", price: "$29.99" },
-        { id: 17, img: outfit18, name: "Black Lace-Up Boots", price: "$79.99" },
-        { id: 18, img: outfit19, name: "Green Sweater", price: "$49.99" },
-        { id: 19, img: outfit20, name: "Leather Brown Belt", price: "$89.99" },
-        { id: 20, img: outfit21, name: "Emerald Velvet Maxi Skirt", price: "$69.99" },
+        { id: 20, img: outfit1, name: "Emerald Velvet Maxi Skirt", price: "$69.99" },
+        { id: 26, img: outfit2, name: "Yellow Floral Long Skirt", oldprice: "79.99", price: "$64.99" },
+        { id: 32, img: outfit3, name: "Brown Draped Mini Skirt", oldprice: "74.99", price: "$54.99" },
+        { id: 74, img: outfit4, name: "Gray High Slit Wool Skirt", price: "$89.99" },
+        { id: 75, img: outfit5, name: "Pink Pleated Mini Skirt", price: "$59.99" },
+        { id: 76, img: outfit6, name: "Polka Dot Tiered Maxi Skirt", price: "$104.99" },
+        { id: 77, img: outfit7, name: "Buckle Detail Mini Skirt", price: "$74.99" },
+        { id: 78, img: outfit8, name: "Cargo Pocket Pleated Mini Skirt", price: "$69.99" },
+        { id: 79, img: outfit9, name: "White Lace Maxi Skirt", price: "44.99" },
+        { id: 80, img: outfit10, name: "High-Waist Leopard Maxi Skirt", price: "$79.99" },
+        { id: 81, img: outfit11, name: "Tiered Ruffle Maxi Skirt", price: "$64.99" },
+        { id: 82, img: outfit12, name: "Fringe Suede Maxi Skirt", price: "$59.99" },
+        { id: 83, img: outfit13, name: "Pink Sparkle Mini Skirt", price: "$99.99" },
+        { id: 84, img: outfit14, name: "Black Tulle Layered Skirt", price: "$84.99" },
+        { id: 85, img: outfit15, name: "Lilac Satin Bias Cut Skirto", price: "$74.99" },
+        { id: 86, img: outfit16, name: "High-Low Denim Maxi Skirt", price: "$64.99" },
+        { id: 87, img: outfit17, name: "Cream Ribbed Knit Maxi Skirt", price: "$99.99" },
+        { id: 88, img: outfit18, name: "High-Waist Camel Mini Skirt", price: "$49.99" },
+        { id: 89, img: outfit19, name: "Voluminous Tulle Long Skirt", price: "$84.99" },
+        { id: 90, img: outfit20, name: "Cream A-Line Skirt", price: "$59.99" },
     ];
+
     const toggleFavorite = (product) => {
         if (favorites.find(fav => fav.id === product.id)) {
             // zaten favorideyse çıkar
@@ -142,4 +143,4 @@ function NewCollections() {
     );
 }
 
-export default NewCollections;
+export default Skirt;
